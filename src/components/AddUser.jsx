@@ -4,7 +4,7 @@ import ErrorModal from './Modal';
 const AddUser = props => {
   const [enteredUsername, setEnteredUsername] = useState('');
   const [enteredAge, setEnteredAge] = useState('');
-  const [error, setError] = useState();
+  const [error, setError] = useState(false);
 
   const addUserHandler = event => {
     event.preventDefault();
@@ -36,7 +36,7 @@ const AddUser = props => {
   };
 
   const errorHandler = () => {
-    setError(null);
+    setError(!error);
   };
 
   return (
