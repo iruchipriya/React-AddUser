@@ -3,7 +3,6 @@ import React from 'react';
 const Modal = props => {
   return (
     <div>
-      <div onClick={props.onConfirm} />
       <div>
         <header>
           <h2>{props.title}</h2>
